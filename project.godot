@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="gui_calculator"
-config/icon="res://icon.png"
+config/icon="res://addons/calculator/icon.png"
 
 [physics]
 
