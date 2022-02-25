@@ -23,8 +23,7 @@ __meta__ = {
 [node name="LineEdit" type="LineEdit" parent="VBoxContainer"]
 margin_right = 146.0
 margin_bottom = 24.0
-caret_blink = true
-caret_blink_speed = 0.5
+clear_button_enabled = true
 
 [node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
 margin_top = 28.0
