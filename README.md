@@ -1,6 +1,3 @@
-# gui_calculator
-Calculator usable with keyboard and mouse. 
+Edit it by setting the text of a "char_button" to a different operator or by adding new char_buttons. 
 
-Editable by setting the text of a "char_button" to a different operator or by adding new char_buttons. 
-
-Uses the Expression Class for parsing and executing.
+It uses the Expression Class for parsing and executing, thus it supports most operations GDscript supports.
