@@ -1,6 +1,7 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://addons/calculator/char_button/char_button.gd" type="Script" id=1]
+[ext_resource path="res://addons/calculator/char_button.gd" type="Script" id=1]
+
 
 [node name="CharButton" type="Button" groups=["char_button"]]
 anchor_right = 1.0
