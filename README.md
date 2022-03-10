@@ -1,4 +1,4 @@
-Edit it by setting the text of a "char_button" to a different operator or by adding new char_buttons. 
+Edit it by setting the text of a "char_button" to a different operator or by adding new char_buttons. Includes ANS, like a real calculator.
 
 It uses the Expression Class for parsing and executing, thus it supports most operations GDscript supports.
 
