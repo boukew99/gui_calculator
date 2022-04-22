@@ -6,10 +6,10 @@ var expression = Expression.new()
 onready var line_edit = $VBoxContainer/LineEdit
 
 func _ready():
-	get_tree().call_group("char_button", "connect", "char_pressed", self, "_on_CharButton_pressed")
+	$VBoxContainer/GridContainer.get_child(0).group.connect("pressed", self, "_on_CharButton_pressed")
 	
-func _on_CharButton_pressed(character):
-	line_edit.text += character
+func _on_CharButton_pressed(button):
+	line_edit.text += button.text
 	
 func _on_LineEdit_text_entered(new_text):  
 	var error = expression.parse(new_text, ["ANS"])
