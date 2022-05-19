@@ -17,7 +17,7 @@ config/icon="res://addons/calculator/icon.png"
 [display]
 
 window/size/width=160
-window/size/height=158
+window/size/height=182
 
 [physics]
 

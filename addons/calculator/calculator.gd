@@ -11,7 +11,8 @@ func _ready():
 func _on_CharButton_pressed(button):
 	line_edit.text += button.text
 	
-func _on_LineEdit_text_entered(new_text):  
+func _on_LineEdit_text_entered(new_text):
+	new_text = new_text.to_lower() # fix parse error from `True` and `False` result 
 	var error = expression.parse(new_text, ["ANS"])
 	if error != OK:
 		line_edit.text = expression.get_error_text()
