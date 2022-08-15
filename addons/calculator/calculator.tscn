@@ -13,24 +13,24 @@ script = ExtResource( 2 )
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 153.0
-margin_bottom = 175.0
+margin_bottom = 177.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="LineEdit" type="LineEdit" parent="VBoxContainer"]
 margin_right = 146.0
-margin_bottom = 24.0
+margin_bottom = 26.0
 clear_button_enabled = true
 
 [node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
-margin_top = 28.0
+margin_top = 30.0
 margin_right = 146.0
-margin_bottom = 168.0
+margin_bottom = 170.0
 columns = 4
 
 [node name="Multiplication" type="Button" parent="VBoxContainer/GridContainer"]
-margin_right = 33.0
+margin_right = 34.0
 margin_bottom = 32.0
 rect_min_size = Vector2( 0, 32 )
 size_flags_horizontal = 3
@@ -42,8 +42,8 @@ __meta__ = {
 }
 
 [node name="1" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 37.0
-margin_right = 70.0
+margin_left = 38.0
+margin_right = 72.0
 margin_bottom = 32.0
 rect_min_size = Vector2( 0, 32 )
 size_flags_horizontal = 3
@@ -55,8 +55,8 @@ __meta__ = {
 }
 
 [node name="2" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 74.0
-margin_right = 107.0
+margin_left = 76.0
+margin_right = 109.0
 margin_bottom = 32.0
 rect_min_size = Vector2( 0, 32 )
 size_flags_horizontal = 3
@@ -68,8 +68,8 @@ __meta__ = {
 }
 
 [node name="3" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 111.0
-margin_right = 144.0
+margin_left = 113.0
+margin_right = 146.0
 margin_bottom = 32.0
 rect_min_size = Vector2( 0, 32 )
 size_flags_horizontal = 3
@@ -82,7 +82,7 @@ __meta__ = {
 
 [node name="Division" type="Button" parent="VBoxContainer/GridContainer"]
 margin_top = 36.0
-margin_right = 33.0
+margin_right = 34.0
 margin_bottom = 68.0
 rect_min_size = Vector2( 0, 32 )
 size_flags_horizontal = 3
@@ -91,9 +91,9 @@ group = SubResource( 1 )
 text = " / "
 
 [node name="4" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 37.0
+margin_left = 38.0
 margin_top = 36.0
-margin_right = 70.0
+margin_right = 72.0
 margin_bottom = 68.0
 rect_min_size = Vector2( 0, 32 )
 size_flags_horizontal = 3
@@ -105,9 +105,9 @@ __meta__ = {
 }
 
 [node name="5" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 74.0
+margin_left = 76.0
 margin_top = 36.0
-margin_right = 107.0
+margin_right = 109.0
 margin_bottom = 68.0
 rect_min_size = Vector2( 0, 32 )
 size_flags_horizontal = 3
@@ -116,9 +116,9 @@ group = SubResource( 1 )
 text = "5"
 
 [node name="6" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 111.0
+margin_left = 113.0
 margin_top = 36.0
-margin_right = 144.0
+margin_right = 146.0
 margin_bottom = 68.0
 rect_min_size = Vector2( 0, 32 )
 size_flags_horizontal = 3
@@ -131,7 +131,7 @@ __meta__ = {
 
 [node name="Addition" type="Button" parent="VBoxContainer/GridContainer"]
 margin_top = 72.0
-margin_right = 33.0
+margin_right = 34.0
 margin_bottom = 104.0
 rect_min_size = Vector2( 0, 32 )
 size_flags_horizontal = 3
@@ -143,9 +143,9 @@ __meta__ = {
 }
 
 [node name="7" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 37.0
+margin_left = 38.0
 margin_top = 72.0
-margin_right = 70.0
+margin_right = 72.0
 margin_bottom = 104.0
 rect_min_size = Vector2( 0, 32 )
 size_flags_horizontal = 3
@@ -157,9 +157,9 @@ __meta__ = {
 }
 
 [node name="8" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 74.0
+margin_left = 76.0
 margin_top = 72.0
-margin_right = 107.0
+margin_right = 109.0
 margin_bottom = 104.0
 rect_min_size = Vector2( 0, 32 )
 size_flags_horizontal = 3
@@ -171,9 +171,9 @@ __meta__ = {
 }
 
 [node name="9" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 111.0
+margin_left = 113.0
 margin_top = 72.0
-margin_right = 144.0
+margin_right = 146.0
 margin_bottom = 104.0
 rect_min_size = Vector2( 0, 32 )
 size_flags_horizontal = 3
@@ -186,7 +186,7 @@ __meta__ = {
 
 [node name="Subtraction" type="Button" parent="VBoxContainer/GridContainer"]
 margin_top = 108.0
-margin_right = 33.0
+margin_right = 34.0
 margin_bottom = 140.0
 rect_min_size = Vector2( 0, 32 )
 size_flags_horizontal = 3
@@ -198,9 +198,9 @@ __meta__ = {
 }
 
 [node name="0" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 37.0
+margin_left = 38.0
 margin_top = 108.0
-margin_right = 70.0
+margin_right = 72.0
 margin_bottom = 140.0
 rect_min_size = Vector2( 0, 32 )
 size_flags_horizontal = 3
@@ -212,9 +212,9 @@ __meta__ = {
 }
 
 [node name="Dot" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 74.0
+margin_left = 76.0
 margin_top = 108.0
-margin_right = 107.0
+margin_right = 109.0
 margin_bottom = 140.0
 rect_min_size = Vector2( 0, 32 )
 size_flags_horizontal = 3
@@ -226,9 +226,9 @@ __meta__ = {
 }
 
 [node name="Evaluate" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 111.0
+margin_left = 113.0
 margin_top = 108.0
-margin_right = 144.0
+margin_right = 146.0
 margin_bottom = 140.0
 rect_min_size = Vector2( 0, 32 )
 size_flags_horizontal = 3

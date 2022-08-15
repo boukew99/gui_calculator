@@ -1,0 +1,129 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/pin_lock/pin_lock.gd" type="Script" id=1]
+
+[sub_resource type="ButtonGroup" id=1]
+
+[node name="PINLock" type="PanelContainer"]
+margin_right = 114.0
+margin_bottom = 226.0
+script = ExtResource( 1 )
+PINs = [ "" ]
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 107.0
+margin_bottom = 219.0
+columns = 2
+
+[node name="1" type="Button" parent="GridContainer"]
+margin_right = 48.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 48, 32 )
+toggle_mode = true
+group = SubResource( 1 )
+text = "1"
+
+[node name="2" type="Button" parent="GridContainer"]
+margin_left = 52.0
+margin_right = 100.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 48, 32 )
+toggle_mode = true
+group = SubResource( 1 )
+text = "2"
+
+[node name="3" type="Button" parent="GridContainer"]
+margin_top = 36.0
+margin_right = 48.0
+margin_bottom = 68.0
+rect_min_size = Vector2( 48, 32 )
+toggle_mode = true
+group = SubResource( 1 )
+text = "3"
+
+[node name="4" type="Button" parent="GridContainer"]
+margin_left = 52.0
+margin_top = 36.0
+margin_right = 100.0
+margin_bottom = 68.0
+rect_min_size = Vector2( 48, 32 )
+toggle_mode = true
+group = SubResource( 1 )
+text = "4"
+
+[node name="5" type="Button" parent="GridContainer"]
+margin_top = 72.0
+margin_right = 48.0
+margin_bottom = 104.0
+rect_min_size = Vector2( 48, 32 )
+toggle_mode = true
+group = SubResource( 1 )
+text = "5"
+
+[node name="6" type="Button" parent="GridContainer"]
+margin_left = 52.0
+margin_top = 72.0
+margin_right = 100.0
+margin_bottom = 104.0
+rect_min_size = Vector2( 48, 32 )
+toggle_mode = true
+group = SubResource( 1 )
+text = "6"
+
+[node name="7" type="Button" parent="GridContainer"]
+margin_top = 108.0
+margin_right = 48.0
+margin_bottom = 140.0
+rect_min_size = Vector2( 48, 32 )
+toggle_mode = true
+group = SubResource( 1 )
+text = "7"
+
+[node name="8" type="Button" parent="GridContainer"]
+margin_left = 52.0
+margin_top = 108.0
+margin_right = 100.0
+margin_bottom = 140.0
+rect_min_size = Vector2( 48, 32 )
+toggle_mode = true
+group = SubResource( 1 )
+text = "8"
+
+[node name="9" type="Button" parent="GridContainer"]
+margin_top = 144.0
+margin_right = 48.0
+margin_bottom = 176.0
+rect_min_size = Vector2( 48, 32 )
+toggle_mode = true
+group = SubResource( 1 )
+text = "9"
+
+[node name="0" type="Button" parent="GridContainer"]
+margin_left = 52.0
+margin_top = 144.0
+margin_right = 100.0
+margin_bottom = 176.0
+rect_min_size = Vector2( 48, 32 )
+toggle_mode = true
+group = SubResource( 1 )
+text = "0"
+
+[node name="Clear" type="Button" parent="GridContainer"]
+margin_top = 180.0
+margin_right = 48.0
+margin_bottom = 212.0
+rect_min_size = Vector2( 48, 32 )
+text = "*"
+
+[node name="Enter" type="Button" parent="GridContainer"]
+margin_left = 52.0
+margin_top = 180.0
+margin_right = 100.0
+margin_bottom = 212.0
+rect_min_size = Vector2( 48, 32 )
+text = "#"
+
+[connection signal="pressed" from="GridContainer/Clear" to="." method="_on_Clear_pressed"]
+[connection signal="pressed" from="GridContainer/Enter" to="." method="_on_Enter_pressed"]

@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/pin_lock/password_lock.tscn" type="PackedScene" id=1]
+[ext_resource path="res://addons/pin_lock/pin_lock.tscn" type="PackedScene" id=2]
+[ext_resource path="res://addons/pin_lock/test.gd" type="Script" id=3]
+
+[node name="Test" type="PanelContainer"]
+margin_right = 14.0
+margin_bottom = 14.0
+script = ExtResource( 3 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 371.0
+margin_bottom = 233.0
+
+[node name="PINLock" parent="HBoxContainer" instance=ExtResource( 2 )]
+PINs = [ "1234" ]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 118.0
+margin_right = 194.0
+margin_bottom = 226.0
+
+[node name="CheckButton" type="CheckButton" parent="HBoxContainer/VBoxContainer"]
+margin_right = 76.0
+margin_bottom = 40.0
+
+[node name="PasswordLock" parent="HBoxContainer" instance=ExtResource( 1 )]
+margin_left = 198.0
+margin_right = 364.0
+margin_bottom = 226.0
+passwords = [ "1234" ]
+
+[connection signal="entered" from="HBoxContainer/PINLock" to="." method="_on_PINLock_entered"]
+[connection signal="entered" from="HBoxContainer/PasswordLock" to="." method="_on_PasswordLock_entered"]
